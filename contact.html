@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | CodeNova</title>
+
+    <!-- Stil Dosyası -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-container">
+        <h1 class="logo"><a href="index.html">CodeNova</a></h1>
+        <!-- Hamburger menü butonu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="faq.html">S.S.S.</a></li>
+            <li><a href="contact.html" class="active">İletişim</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+            <li><a href="register.html">Bize Katıl</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- İLETİŞİM FORMU -->
+    <section class="contact-section">
+      <div class="container">
+        <h2>Bizimle İletişime Geç</h2>
+        <form class="contact-form" action="#" method="post">
+          <input type="text" name="name" placeholder="Ad Soyad" required />
+          <input type="email" name="email" placeholder="E-posta" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Mesajınız"
+            required
+          ></textarea>
+          <button type="submit">Gönder</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>© 2025 CodeNova| Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

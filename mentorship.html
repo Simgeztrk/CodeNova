@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentorluk | CodeNova</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background: #fff;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .header {
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #ff5722;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .nav-links li a:hover {
+        color: #ff5722;
+      }
+      .mentorship-section {
+        padding: 100px 20px;
+        text-align: center;
+      }
+      .mentorship-section h2 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #223;
+      }
+      .mentorship-cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        max-width: 350px;
+        flex: 1 1 300px;
+        text-align: center;
+        transition: all 0.4s ease;
+      }
+
+      .card:hover {
+        background: linear-gradient(135deg, #ff5722, #ee9d46);
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(255, 87, 34, 0.25);
+      }
+
+      .card i {
+        font-size: 2.4rem;
+        color: #ff5722;
+        margin-bottom: 16px;
+        transition: all 0.3s ease;
+      }
+
+      .card:hover i {
+        transform: scale(1.2) rotate(6deg);
+        color: #fff;
+      }
+
+      .card h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+      }
+
+      .card p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+        transition: color 0.3s ease;
+      }
+
+      .card:hover h3,
+      .card:hover p {
+        color: #fff;
+      }
+
+      .footer {
+        background: linear-gradient(to top, #f2f2f2, #ffffff);
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 0.95rem;
+        color: #666;
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <h1 class="logo"><a href="index.html">CodeNova</a></h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="faq.html">S.S.S.</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+            <li><a href="register.html">Bize Katıl</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="mentorship-section">
+      <div class="container">
+        <h2>Mentorluk</h2>
+        <div class="mentorship-cards">
+          <div class="card">
+            <i class="ri-lightbulb-line"></i>
+            <h3>Alanında Uzman Mentorlarla Tanış</h3>
+            <p>
+              CodeNova mentorları; yazılım, tasarım, pazarlama ve girişimcilik
+              gibi alanlarda gerçek deneyime sahip profesyonellerden oluşur.
+              Sana özel belirlenen mentorlar, bilgi birikimlerini aktararak
+              kariyer hedeflerine ulaşmanı hızlandırır.
+            </p>
+          </div>
+          <div class="card">
+            <i class="ri-user-heart-line"></i>
+            <h3>Birebir Geri Bildirim ve Yol Haritası</h3>
+            <p>
+              Mentorluk görüşmelerinde sadece teorik bilgi değil, sana özel
+              gelişim planı oluşturulur. Projene, kariyerine veya fikirlerine
+              dair adım adım yönlendirme ve takip desteği alırsın.
+            </p>
+          </div>
+          <div class="card">
+            <i class="ri-group-line"></i>
+            <h3>İlham Veren Deneyim Paylaşımları</h3>
+            <p>
+              Mentorlar sadece bilgi vermez, aynı zamanda yolculuklarını,
+              hatalarını ve başarılarını da paylaşır. Bu sayede kendi yolunu
+              çizerken karşılaşabileceğin zorluklara karşı hazır olursun ve
+              ilham alırsın.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 CodeNova | Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+  </body>
+</html>

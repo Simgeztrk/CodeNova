@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.S.S. | CodeNova</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER (opsiyonel) -->
+    <header class="header">
+      <div class="container header-container">
+        <h1 class="logo"><a href="index.html">CodeNova</a></h1>
+        <!-- Hamburger menü butonu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="faq.html" class="active">S.S.S.</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+            <li><a href="register.html">Bize Katıl</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- S.S.S. BÖLÜMÜ -->
+    <section class="faq-section">
+      <div class="container">
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>DevScholars kimlere hitap eder?</h3>
+            <p>
+              DevScholars; yazılıma yeni başlayanlardan, proje geliştiren
+              girişimcilere kadar herkes için destek sunar. Mentorluk sistemi
+              ile her seviyeye uygun içerik ve yol haritası sağlar.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Mentorluk sistemi nasıl işliyor?</h3>
+            <p>
+              Kayıt olan kullanıcılar profillerini tamamlayarak mentorluk
+              havuzuna dahil olur. Birebir eşleşme sistemiyle doğru mentor ile
+              haftalık ya da aylık görüşmeler yapılır.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Eğitim içerikleri ücretsiz mi?</h3>
+            <p>
+              Platform içerisindeki temel içerikler ücretsizdir. Ancak ileri
+              seviye modüller ve özel mentorluk hizmetleri için düşük bütçeli
+              paketler sunulmaktadır.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Topluluk etkinlikleri nasıl düzenleniyor?</h3>
+            <p>
+              Discord ve Zoom üzerinden canlı buluşmalar, workshoplar ve
+              soru-cevap oturumları düzenlenir. Bu etkinlikler takvim üzerinden
+              duyurulur ve tüm üyeler davetlidir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>© 2025 CodeNova | Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript (inline olarak buraya gömülü) -->
+    <script>
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

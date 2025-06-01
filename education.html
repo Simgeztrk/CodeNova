@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eğitim İçerikleri | CodeNova</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --primary-color: #052e54;
+        --tag-hover: linear-gradient(135deg, #021a30, #08355f);
+      }
+
+      .education-page {
+        padding: 100px 20px;
+        background: #f9f9f9;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      .education-page h2 {
+        text-align: center;
+        font-size: 2.8rem;
+        color: var(--primary-color);
+        margin-bottom: 60px;
+        position: relative;
+      }
+
+      .education-page h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: #ff5722;
+        border-radius: 2px;
+      }
+
+      .education-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+      }
+
+      .education-card {
+        background: linear-gradient(135deg, #ff5722, #ff8c42);
+        color: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .education-card:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 50px rgba(255, 87, 34, 0.4);
+      }
+
+      .education-card h3 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      .education-card p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 10px;
+      }
+
+      .nav-links a.active {
+        color: orange; /* Lacivert yazı */
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 12px;
+        position: relative;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+
+      .nav-links a.active::after {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 4px;
+        background-color: #052e54; /* Lacivert alt çizgi */
+        border-radius: 2px;
+      }
+
+      .tag {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.15);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        transition: background 0.3s ease, transform 0.3s ease;
+        cursor: default;
+      }
+
+      .tag:hover {
+        background: var(--tag-hover);
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 480px) {
+        .education-page {
+          padding: 60px 15px;
+        }
+
+        .education-page h2 {
+          font-size: 2rem;
+        }
+
+        .education-card h3 {
+          font-size: 1.3rem;
+        }
+
+        .education-card p {
+          font-size: 0.95rem;
+        }
+
+        .tag {
+          font-size: 0.8rem;
+          padding: 6px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <h1 class="logo"><a href="index.html">CodeNova</a></h1>
+        <!-- Hamburger menü butonu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="faq.html">S.S.S.</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="login.html">Giriş Yap</a></li>
+            <li><a href="register.html">Bize Katıl</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="education-page">
+      <div class="container">
+        <h2>Eğitim İçerikleri</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <h3>Frontend Geliştirme</h3>
+            <p>
+              HTML5, CSS3, JavaScript, Sass, Bootstrap, Tailwind, React, Vue
+              gibi teknolojilerle dinamik ve modern kullanıcı arayüzleri
+              tasarlamayı öğren.
+            </p>
+            <span class="tag">HTML/CSS/JS</span>
+          </div>
+
+          <div class="education-card">
+            <h3>Backend ve API Geliştirme</h3>
+            <p>
+              Node.js, Express, Django, Laravel gibi teknolojilerle RESTful
+              API'ler oluşturmayı, JWT ile kullanıcı kimlik doğrulama
+              süreçlerini öğren.
+            </p>
+            <span class="tag">Node / Django / PHP</span>
+          </div>
+
+          <div class="education-card">
+            <h3>Veritabanı ve ORM</h3>
+            <p>
+              MySQL, PostgreSQL, MongoDB ve ORM araçları ile (Sequelize,
+              Mongoose) veritabanı yapısını modellemeyi ve etkili veri
+              yönetimini keşfet.
+            </p>
+            <span class="tag">SQL / NoSQL</span>
+          </div>
+
+          <div class="education-card">
+            <h3>DevOps ve Sürüm Kontrol</h3>
+            <p>
+              Git & GitHub, CI/CD süreçleri, Docker, deployment yöntemleri ve
+              temel sunucu yönetimi ile üretim sürecine geçiş adımlarını öğren.
+            </p>
+            <span class="tag">Git / Docker / CI</span>
+          </div>
+
+          <div class="education-card">
+            <h3>UI/UX Tasarımı</h3>
+            <p>
+              Figma, Adobe XD, kullanıcı yolculuğu, wireframe, responsive
+              tasarım prensipleriyle tasarım odaklı düşünmeyi öğren.
+            </p>
+            <span class="tag">Figma / UX Thinking</span>
+          </div>
+
+          <div class="education-card">
+            <h3>Proje Yönetimi & Agile</h3>
+            <p>
+              Agile metodolojileri, Scrum, Kanban, Jira ve Trello gibi araçlarla
+              yazılım geliştirme süreçlerini profesyonelce yönetmeyi öğren.
+            </p>
+            <span class="tag">Scrum / Trello</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>© 2025 DevScholars | Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+  </body>
+</html>
