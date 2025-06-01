@@ -17,19 +17,16 @@ CodeNova, bireylerin yazılım, tasarım, girişimcilik gibi alanlarda gelişimi
 ---
 
 ## 🗂️ Proje Dosya Yapısı
-
-📁 /public
-📁 /src
-├── index.html
-├── about.html
-├── education.html
-├── mentorship.html
-├── community.html
-├── faq.html
-├── contact.html
-├── login.html
-├── register.html
-└── style.css
+ index.html
+ about.html
+ education.html
+ mentorship.html
+ community.html
+ faq.html 
+ contact.html
+ login.html
+ register.html
+ style.css
 
 ---
 
